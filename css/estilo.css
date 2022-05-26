@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: linear-gradient(90deg, #6f6d99 0%, #1a7580 35%, #f7f7f7 100%); }
+
+.navbar {
+  position: relative;
+  z-index: auto; }
+
+.navbar img {
+  width: 150px;
+  animation-name: anima;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-duration: 2s; }
+
+@keyframes anima {
+  10% {
+    transform: scaleY(0.8); }
+  25%, 26% {
+    transform: translateY(-24px) scaleY(1.001); }
+  35% {
+    transform: translateY(0) scaleY(0.999); }
+  50% {
+    transform: scaleY(0.9); }
+  70% {
+    tranform: scaleY(1); } }
+
+.nav-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  height: auto; }
+
+/*fotoprincipal*/
+.fotopri {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 8px 12px black; }
+
+.fotopri img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  text-align: center; }
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 85px;
+  color: #D3D3D3;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 58%;
+  height: 10%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 8px black;
+  transition: all 1.4s;
+  z-index: auto; }
+
+h1:hover {
+  font-size: 87px;
+  color: blue; }
+
+h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
+  color: #D3D3D3;
+  text-decoration: underline;
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  width: 50%;
+  text-shadow: 0 0 8px black;
+  text-align: center;
+  z-index: auto; }
+
+/*finalfotopri*/
+.accordion-item {
+  width: 100%;
+  background: #6f6d99 linear-gradient(90deg, #6f6d99 0%, #91a1a3 0%, #d2bebe 23%); }
+
+.accordion-button {
+  font-weight: bold; }
+
+.accordion-body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 28px;
+  text-align: center;
+  transition: all 1.4s; }
+  h2:hover {
+    font-size: 30px;
+    color: blue; }
+
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  margin: 15px; }
+
+/*galeria*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px; }
+
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px; }
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear; }
+
+.column img:hover {
+  filter: grayscale(0); }
+
+.videos {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 20px;
+  width: 70%;
+  margin-top: 40px;
+  margin-left: 120px; }
+
+.video {
+  vertical-align: middle;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear; }
+
+.video:hover {
+  filter: grayscale(0); }
+
+/*fin galeria*/
+/*ubicacionmapa*/
+.mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.map {
+  width: 1000px;
+  height: 450px; }
+
+/*cardspagprincipal*/
+.card {
+  background: #6f6d99 linear-gradient(90deg, #6f6d99 0%, #91a1a3 0%, #d2bebe 23%);
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.card-text {
+  color: black; }
+
+/*formulario*/
+.form-group {
+  color: black;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  padding: 10px; }
+
+.anchoFooter {
+  margin-top: 30px;
+  background-color: white;
+  text-align: center; }
+
+.redes {
+  display: inline-block; }
+
+.bi-facebook, .bi-whatsapp, .bi-instagram {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: black; }
+  .bi-facebook:hover, .bi-whatsapp:hover, .bi-instagram:hover {
+    color: blue; }
+
+.bi-whatsapp:hover {
+  color: green; }
+
+.bi-instagram:hover {
+  color: red; }
+
+/*pantalla mobile*/
+@media screen and (max-width: 480px) {
+  .navbar {
+    z-index: 1; }
+  .nav-item {
+    height: 75px; }
+  h1 {
+    font-size: 30px;
+    top: 25%;
+    left: 60%;
+    transition: none;
+    z-index: 0; }
+  h1:hover {
+    font-size: 30px;
+    color: #D3D3D3; }
+  h3 {
+    font-size: 15px;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    z-index: 0; }
+  p {
+    font-size: 15px;
+    margin: 20px; }
+  .videos {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px; }
+  .map {
+    width: 250px;
+    height: 350px; } }
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .navbar {
+    z-index: 1; }
+  .nav-item {
+    height: 75px; }
+  h1 {
+    font-size: 40px;
+    top: 36%;
+    left: 56%;
+    transition: none;
+    z-index: 0; }
+  h1:hover {
+    font-size: 40px;
+    color: #D3D3D3; }
+  h3 {
+    font-size: 20px;
+    top: 50%;
+    left: 25%;
+    z-index: 0; }
+  .videos {
+    flex-direction: column;
+    margin-left: 50px; }
+  .map {
+    width: 350px;
+    height: 350px; } }

@@ -1,0 +1,18 @@
+ $bg: rgb(111,109,153)linear-gradient(90deg, rgba(111,109,153,1) 0%, rgba(145,161,163,1) 0%, rgba(210,190,190,1) 23%);
+$widht: 100%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body{
+    background: linear-gradient(90deg, rgba(111,109,153,1) 0%, rgba(26,117,128,1) 35%, rgba(247,247,247,1) 100%);
+}
+
+@import "header";
+@import "main";
+@import "footer";
+@import "media";
+
+

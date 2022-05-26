@@ -1,0 +1,170 @@
+
+/*fotoprincipal*/
+.fotopri{
+    width: $widht;
+    height: $widht;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 8px 12px black;
+}
+
+.fotopri img{
+    width: $widht;
+    height: $widht;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 85px;
+    color: #D3D3D3;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 58%;
+    height: 10%;
+    transform:translate(-50%, -50%);
+    text-shadow: 0 0 8px black;
+    transition: all 1.4s;
+    z-index: auto;
+}
+
+h1:hover{
+    font-size: 87px;
+    color: blue;
+}
+
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: #D3D3D3;
+    text-decoration: underline;
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    width: 50%;
+    text-shadow: 0 0 8px black;
+    text-align: center; 
+    z-index: auto;
+}
+/*finalfotopri*/
+
+.accordion-item{
+    width: $widht;  
+    background: $bg;
+}
+
+.accordion-button{
+    font-weight: bold ;    
+}
+
+.accordion-body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;    
+}
+
+h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    text-align: center;
+    transition: all 1.4s;
+                    
+        &:hover{
+            font-size: 30px;
+            color: blue;   
+    }
+}
+
+p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px ;
+    color: black;
+    margin: 15px;
+}
+
+/*galeria*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+.column {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 0 4px;
+  }
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: $widht;
+    filter: grayscale(1) brightness(0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.column img:hover {
+    filter: grayscale(0);
+}
+
+.videos{
+    display:inline-flex;
+    flex-direction: row;
+    padding: 20px;
+    width: 70%;
+    margin-top: 40px;
+    margin-left: 120px;
+}
+.video{
+    vertical-align: middle;
+    filter: grayscale(1) brightness(0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.video:hover{
+    filter: grayscale(0);
+}
+
+/*fin galeria*/
+
+
+/*ubicacionmapa*/
+.mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map{
+    width: 1000px;
+    height: 450px;
+}
+
+/*cardspagprincipal*/
+.card{
+    background: $bg;
+    justify-content: space-between;
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+
+.card-text{
+    color: black;
+}
+
+/*formulario*/
+.form-group{
+    color: black;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    padding: 10px;   
+    
+ }
